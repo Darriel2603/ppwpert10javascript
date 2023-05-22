@@ -90,7 +90,7 @@
             <p>66% of people (73% of Millennials) are willing to pay more for products and services from companies committed to positive social and environmental impact.</p>
           </div>
           <div class="button-group">
-            <button class="btn mt-auto" style="background-color: #06BEE1; font-family: Lato; font-weight: 500; color: white;" onclick="editContent()">LEARN MORE</button>
+            <button class="btn mt-auto" style="background-color: #06BEE1; font-family: Lato; font-weight: 500; color: white;">LEARN MORE</button>
             <button type="button" class="btn btn-link" onclick="replaceContent()">Edit</button>
           </div>
         </div>
@@ -295,26 +295,6 @@
     
 
     <script>
-      function editContent() {
-        var contentElement = document.getElementById("content");
-        var paragraph = contentElement.querySelector("p");
-        var textArea = document.createElement("textarea");
-        textArea.value = "Ocean One are a turnkey solution to begin the journey of reducing your business’s environmental footprint or going plastic neutral.";
-        textArea.style.height = "200px";
-        textArea.style.width = "100%";
-        textArea.style.resize = "vertical";
-    
-        var replaceButton = document.createElement("button");
-        replaceButton.innerText = "Replace";
-        replaceButton.onclick = function() {
-          replaceContentBack();
-        };
-    
-        contentElement.removeChild(paragraph);
-        contentElement.appendChild(textArea);
-        contentElement.appendChild(replaceButton);
-      }
-    
       function replaceContent() {
         var contentElement = document.getElementById("content");
         var paragraph = contentElement.querySelector("p");
